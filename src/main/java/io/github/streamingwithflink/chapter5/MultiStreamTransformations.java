@@ -32,6 +32,8 @@ import org.apache.flink.util.Collector;
  * A simple application that outputs an alert whenever there is a high risk of fire.
  * The application receives the stream of temperature sensor readings and a stream of smoke level measurements.
  * When the temperature is over a given threshold and the smoke level is high, we emit a fire alert.
+ *
+ * DataStream API中的多流转换操作
  */
 public class MultiStreamTransformations {
 

@@ -24,7 +24,10 @@ import org.apache.flink.streaming.api.datastream.KeyedStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
 /**
- * Example program to demonstrate keyed transformation functions: keyBy, reduce.
+ * Example program to demonstrate keyed transformation functions:
+ * keyBy, reduce.
+ *
+ * KeyedStream中的keyBy分组操作和Reduce操作
  */
 public class KeyedTransformations {
 
