@@ -39,6 +39,7 @@ public class RollingSum {
             .sum(1); // sum the second field of the tuple
 
         resultStream.print();
+        // output: (2,3,1)
 
         // execute the application
         env.execute();

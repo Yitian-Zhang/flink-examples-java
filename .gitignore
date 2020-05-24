@@ -3,6 +3,8 @@ dependency-reduced-pom.xml
 *iml
 .idea
 derby.log
+
+
 ### Maven template
 target/
 pom.xml.tag
@@ -15,3 +17,5 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
+# General
+.DS_Store
