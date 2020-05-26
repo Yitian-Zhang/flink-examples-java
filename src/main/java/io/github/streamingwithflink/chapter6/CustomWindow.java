@@ -38,6 +38,9 @@ import org.apache.flink.util.Collector;
 import java.util.Collection;
 import java.util.Collections;
 
+/**
+ * 自定义窗口，包括窗口应用函数，窗口分配器，窗口触发器
+ */
 public class CustomWindow {
 
     public static void main(String[] args) throws Exception {
