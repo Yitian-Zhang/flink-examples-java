@@ -87,6 +87,7 @@ public class KeyedProcessFunctionTimers {
                 // 温度升高并且还未设置计时器
                 // 以当前时间+1s设置处理时间计时器
                 Long timerTs = context.timerService().currentProcessingTime() + 1000;
+                // 注册处理时间计时器
                 context.timerService().registerProcessingTimeTimer(timerTs);
 
                 // 记录当前的计时器

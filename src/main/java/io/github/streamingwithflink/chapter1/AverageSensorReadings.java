@@ -29,7 +29,14 @@ import org.apache.flink.util.Collector;
 public class AverageSensorReadings {
 
     /**
+     * 原始说明：
      * main() defines and executes the DataStream program.
+     *
+     * 功能说明：
+     * 实现以1s为时间窗口，对传感器数据流计算一次平均温度
+     *
+     * 测试说明：
+     * Tested Done
      *
      * @param args program arguments
      * @throws Exception

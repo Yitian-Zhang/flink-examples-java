@@ -20,9 +20,14 @@ import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
 /**
+ * 原始说明：
  * Program demonstrating a rolling sum.
  *
+ * 功能说明：
  * KeyedStream流中的滚动聚合操作
+ *
+ * 测试说明：
+ * Tested Done
  */
 public class RollingSum {
 

@@ -24,10 +24,22 @@ import org.apache.flink.streaming.api.datastream.KeyedStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
 /**
+ * 原始说明：
  * Example program to demonstrate keyed transformation functions:
- * keyBy, reduce.
+ *  keyBy
+ *  reduce
+ * Other transformation functions including:
+ *  min
+ *  max
+ *  sum
+ *  minBy
+ *  maxBy
  *
+ * 功能说明：
  * KeyedStream中的keyBy分组操作和Reduce操作
+ *
+ * 测试说明：
+ * Tested Done
  */
 public class KeyedTransformations {
 

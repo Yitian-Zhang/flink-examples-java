@@ -28,9 +28,17 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.util.Collector;
 
 /**
+ * 原始说明：
  * Example program to demonstrate simple transformation functions: filter, map, and flatMap.
  *
+ * 功能说明：
  * Flink DataStream API基本转换操作
+ *  map
+ *  filter
+ *  flatMap
+ *
+ * 测试说明：
+ * Tested Done
  */
 public class BasicTransformations {
 
@@ -69,8 +77,11 @@ public class BasicTransformations {
 
         // split the String id of each sensor to the prefix "sensor" and sensor number
         DataStream<String> splitIds = sensorIds
-            .flatMap((FlatMapFunction<String, String>)
-                    (id, out) -> { for (String s: id.split("_")) { out.collect(s);}})
+            .flatMap((FlatMapFunction<String, String>) (id, out) -> {
+                for (String s: id.split("_")) {
+                    out.collect(s);
+                }
+            })
             // provide result type because Java cannot infer return type of lambda function
             .returns(Types.STRING);
 

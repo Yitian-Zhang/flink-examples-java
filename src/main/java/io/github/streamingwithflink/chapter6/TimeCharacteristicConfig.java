@@ -25,7 +25,8 @@ public class TimeCharacteristicConfig {
 
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
-        // 使用事件时间，同时支持：处理时间（ TimeCharacteristic.ProcessingTime）
+        // 使用事件时间，同时支持：
+        // 处理时间（ TimeCharacteristic.ProcessingTime）
         // 摄入时间（TimeCharacteristic.IngestionTime）
         env.setStreamTimeCharacteristic(TimeCharacteristic.EventTime);
         // 每10s生成一次水位线，默认为200ms
@@ -78,7 +79,6 @@ public class TimeCharacteristicConfig {
     private static DataStream<SensorReading> setPunctuatedWatermarksAssigner(StreamExecutionEnvironment env) {
         DataStream<SensorReading> sensorData = env.addSource(new SensorSource())
                 .assignTimestampsAndWatermarks(new PunctuatedAssigner());
-
         return sensorData;
     }
 

@@ -8,7 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
+ * 功能说明：
  * KeyedStream流中实现reduce操作示例
+ *
+ * 测试说明：
+ * Tested Done
  *
  * @author yitian
  */
@@ -29,7 +33,8 @@ public class KeyedReduceTransformations {
                 Tuple2.of("en", l3));
 
         // 将相同键值的流中的数据，放到一个list集合中
-        DataStream<Tuple2<String, List<String>>> resultStream = inputStream.keyBy(0)
+        DataStream<Tuple2<String, List<String>>> resultStream = inputStream
+                .keyBy(0)
                 .reduce((r1, r2) -> {
                     List tmp = new ArrayList();
                     tmp.add(r1.f1);

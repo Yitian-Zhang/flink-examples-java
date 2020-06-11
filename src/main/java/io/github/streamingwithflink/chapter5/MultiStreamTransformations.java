@@ -29,11 +29,16 @@ import org.apache.flink.streaming.api.functions.co.CoFlatMapFunction;
 import org.apache.flink.util.Collector;
 
 /**
+ * 原始说明：
  * A simple application that outputs an alert whenever there is a high risk of fire.
  * The application receives the stream of temperature sensor readings and a stream of smoke level measurements.
  * When the temperature is over a given threshold and the smoke level is high, we emit a fire alert.
  *
+ * 功能说明：
  * DataStream API中的多流转换操作
+ *
+ * 测试说明：
+ * Tested Done
  */
 public class MultiStreamTransformations {
 
